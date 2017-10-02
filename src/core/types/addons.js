@@ -47,7 +47,7 @@ export type AddonAuthorType = {|
   username: string,
 |};
 
-type LanguageToolType = {|
+type LanguageToolData = {|
   default_locale?: string,
   locale_disambiguation?: string,
   target_locale?: string,
@@ -132,7 +132,7 @@ export type ExternalAddonType = {|
  */
 export type AddonType = {
   ...ExternalAddonType,
-  ...LanguageToolType,
+  ...LanguageToolData,
   ...ThemeData,
   // Here are some custom properties for our internal representation.
   iconUrl: string,
